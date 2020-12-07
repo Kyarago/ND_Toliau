@@ -39,6 +39,25 @@ public:
         Egzaminas = egzaminas;
         //Galutinis = galutinis;
     };
+    ~duomenys() {}
+    friend bool operator<(const duomenys& pirmas, const duomenys& antras) {
+        if (pirmas.Vardas == antras.Vardas) {
+            return pirmas.Pavarde < antras.Pavarde;
+        }
+        return pirmas.Pavarde < antras.Pavarde;
+    }
+    friend bool operator>(const duomenys& pirmas, const duomenys& antras) {
+        if (pirmas.Vardas == antras.Vardas) {
+            return pirmas.Pavarde > antras.Pavarde;
+        }
+        return pirmas.Pavarde > antras.Pavarde;
+    }
+    friend bool operator==(const duomenys& pirmas, const duomenys& antras) {
+        return pirmas.Vardas == antras.Vardas && pirmas.Pavarde == antras.Pavarde;
+    }
+    friend bool operator!=(const duomenys& pirmas, const duomenys& antras) {
+        return pirmas.Vardas != antras.Vardas && pirmas.Pavarde != antras.Pavarde;
+    }
     void Viduk();
     void Madi();
     void Galut();
@@ -50,4 +69,6 @@ public:
     inline float getGalutinis() const {return Galutinis;}
     inline float getMediana() const {return Mediana;}
     inline string getKategorija() const {return Kategorija;}
+
+    
 };

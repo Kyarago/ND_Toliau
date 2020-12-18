@@ -1,30 +1,47 @@
-# Objektinis programavimas
-Pirmo namų darbo užduotis
+__Senesnės vresijos:__
 
-## Diegimo instrukcija:
-**1.** Reikia atsisiųsti Setup.exe bei Setup.msi failus.
+Objektinio programavimo duomenų mokslui pirmo namų darbo užduoties versija 1.2
 
-**2.** Atsisiuntus šiuos failus, paleisti Setup.exe ir programą instaliuoti. 
+**Atsisiuntę rasite:**
+main.cpp - programos kodas skirtas realizuoti užduočiai
+Klase.h - duomenų klasę ir jos funkcijas turinti antraštė
+klase.cpp - duomenų klasės funkcijų aprašas
+generavimas.h - failų generavimui skirta antraštė
+struktura.h - duomenų struktūrą ir jos funkcijas turinti antraštė
+struktura.cpp - struktūros duomenų funkcijos
+Fun.h - programos funkcijų antraštė
+Fun.cpp - programos funcijos
 
-**Svarbu:** Programos negalima instaliuoti į Program Files ar Program Files (x86) direktorijas, nes tokiu atveju programa negaus leidimo sukurti reikiamų tekstinių failų.
+**Kas naujo:**
+Klase.h antraštėje pridėtas destruktorius, operatoriai
 
-**3.** Atsisiųsti kursiokai.txt failą.
+Objektinio programavimo duomenų mokslui pirmo namų darbo užduoties versija 1.1
 
-**4.** Direktorijoje į kurią programa instaliuota reikia įkelti atsisiųstą kursiokai.txt failą.
+**Atsisiuntę rasite:**
+main.cpp - programos kodas skirtas realizuoti užduočiai
+Klase.h - duomenų klasę ir jos funkcijas turinti antraštė
+klase.cpp - duomenų klasės funkcijų aprašas
+generavimas.h - failų generavimui skirta antraštė
+struktura.h - duomenų struktūrą ir jos funkcijas turinti antraštė
+struktura.cpp - struktūros duomenų funkcijos
+Fun.h - programos funkcijų antraštė
+Fun.cpp - programos funcijos
 
-**5.** Ant ekrano turėjo atsirasti "ND1 Su Vektoriais (Active)" programos paleidimas.
+**Kas naujo:**
+Šiek tiek pakeistas programos kodas, programos funkcijos išskaidytos į daugiau failų, kad būtų lengviau naviguojamos.
+Struktūra duomenys pakeista į klasę.
 
-## Naudojimo instrukcija
-__1.__ Paleidus programą, bus klausiama ar reikia sukurti tekstinius failus su atsitiktinai sugeneruotais studentų duomenimis. Juos rekomenduojama sukurti jei programą paleidote pirmą kartą. Toliau failų kurti nebereikės.
+**Programos darbo laiko analizė lyginant STRUCT ir CLASS:**
+![Klases ir strukturos lyginimas](https://user-images.githubusercontent.com/71488215/101383695-2164d800-38c2-11eb-860e-dd2829943216.JPG)
+Kaip matome, naudojant __class__ vietoj __stuct__ turime ilgesnį nuskaitymo laiką, tačiau daugmaž dvigubai greičiau failai yra išskaidomi į naujus vargšelių ir galvočių konteinerius.
 
-__2.__ Toliau programa klaus ar norite atlikti programos darbo laiko analizę. 
-
-__a)__ Pasirinkus analizę, programa dirbs su anksčiau sukurtais studentų failais. Į ekraną bus išvesta analizė, pamatysime kiek laiko užtrunka failą nuskaityti ir suskirstyti į 2 grupes. Tai bus atliekama su __vector__ ir __list__ konteineriais, taip pat skaidymas į vargšelius bei galvočius bus įvykdomas dviem būdais. Galvočių ir vargšelių failai bus sukurti ir atsiras programos instaliacijos direktorijoje. __Programos darbas baigiasi__
-
-__Svarbu:__ Programa klaus kiek namų darbų pažymių yra failuose, todėl generuojant svarbu to neužmiršti, arba patikrinti ir įvesti teisingą skaičių jei pamiršome.
-
-__b)__ Išvysime klausimą ar norime nuskaityti duomenis iš failo, šioje vietoje kalbama apie kursiokai.txt failą kurį reikėjo atsisiųsti anksčiau.
-
-__b. 1)__ Jei pasirenkame, kad norime nuskaityti šį failą, gausime klausimus ar norime sukurti Galvočių ir Vargšelių failus pagal kursiokai.txt informaciją. Na, o toliau prieš išvedant į ekraną informaciją reiks pasirinkti ką norime matyti, medianą ar vidurkį. __Programos darbas baigiasi__
-
-__b. 2)__ Pasirinkus, kad nenorime nuskaityti kursiokai.txt failo, studentų informaciją įvesti reiks patiem, programa suteiks ir galimybę studentų pažymius sugeneruoti atsitiktine tvarka. __Programos darbas baigiasi__
+__Programos darbas keičiant flag'us:__
+Tarp O1 ir O2 optimizavimo flag'ų pagrindinis skirtumas toks, kad naudojant O2 flag'ą failai buvo greičiau nuskaitomi, skirstymas į naujus konteinerius labai panašus,
+Ox flag'as failus nuskaitė labai panašiai kaip ir O2, tačiau šiek tiek greičiau juos išskaidė į 2 naujus konteinerius.
+Paveikslėliai žemiau:
+O1:
+![1 1 Programa O1](https://user-images.githubusercontent.com/71488215/101384589-502f7e00-38c3-11eb-8e0e-473033bb1901.JPG)
+O2:
+![1 1 Programa O2](https://user-images.githubusercontent.com/71488215/101384605-53c30500-38c3-11eb-812b-64e31a10c3da.JPG)
+Ox:
+![1 1 Programa Ox](https://user-images.githubusercontent.com/71488215/101384741-83720d00-38c3-11eb-928e-7f4421aec65d.JPG)

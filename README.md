@@ -1,4 +1,4 @@
-__Senesnės vresijos:__
+__Senesnės versijos:__
 
 Objektinio programavimo duomenų mokslui pirmo namų darbo užduoties versija 1.2
 

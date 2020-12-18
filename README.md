@@ -1,6 +1,6 @@
 __Senesnės versijos:__
 
-##Objektinio programavimo duomenų mokslui pirmo namų darbo užduoties versija 1.2
+### Objektinio programavimo duomenų mokslui pirmo namų darbo užduoties versija 1.2
 
 **Atsisiuntę rasite:**
 main.cpp - programos kodas skirtas realizuoti užduočiai
@@ -15,7 +15,7 @@ Fun.cpp - programos funcijos
 **Kas naujo:**
 Klase.h antraštėje pridėtas destruktorius, operatoriai
 
-##Objektinio programavimo duomenų mokslui pirmo namų darbo užduoties versija 1.1
+### Objektinio programavimo duomenų mokslui pirmo namų darbo užduoties versija 1.1
 
 **Atsisiuntę rasite:**
 main.cpp - programos kodas skirtas realizuoti užduočiai

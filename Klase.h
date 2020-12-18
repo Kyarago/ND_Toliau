@@ -20,10 +20,45 @@ using std::vector;
 using std::sort;
 using std::list;
 
-class duomenys {
+class zmogus {
 private:
     string Vardas = "";
     string Pavarde = "";
+protected:
+    zmogus() {}
+    zmogus(string vardas, string pavarde) { 
+        Vardas = vardas;
+        Pavarde = pavarde;
+    }; //konstruktorius
+    ~zmogus() {} //destruktorius
+public:
+    inline string getVardas() const { return Vardas; }
+    inline string getPavarde() const { return Pavarde; }
+
+    friend bool operator<(const zmogus& pirmas, const zmogus& antras) {
+        if (pirmas.Vardas == antras.Vardas) {
+            return pirmas.Pavarde < antras.Pavarde;
+        }
+        return pirmas.Pavarde < antras.Pavarde;
+    }
+    friend bool operator>(const zmogus& pirmas, const zmogus& antras) {
+        if (pirmas.Vardas == antras.Vardas) {
+            return pirmas.Pavarde > antras.Pavarde;
+        }
+        return pirmas.Pavarde > antras.Pavarde;
+    }
+    friend bool operator==(const zmogus& pirmas, const zmogus& antras) {
+        return pirmas.Vardas == antras.Vardas && pirmas.Pavarde == antras.Pavarde;
+    }
+    friend bool operator!=(const zmogus& pirmas, const zmogus& antras) {
+        return pirmas.Vardas != antras.Vardas && pirmas.Pavarde != antras.Pavarde;
+    }
+};
+
+class duomenys : public zmogus {
+private:
+    /*string Vardas = "";
+    string Pavarde = "";*/
     vector<int> Namu;
     int Egzaminas = 0;
     float Galutinis = 0;
@@ -32,38 +67,21 @@ private:
     string Kategorija;
 public:
     duomenys() {}
-    duomenys(string vardas, string pavarde, vector<int> namu, int egzaminas) {
-        Vardas = vardas;
-        Pavarde = pavarde;
+    duomenys(string vardas, string pavarde, vector<int> namu, int egzaminas) : zmogus{vardas, pavarde} {
+        /*Vardas = vardas;
+        Pavarde = pavarde;*/
         Namu = namu;
         Egzaminas = egzaminas;
         //Galutinis = galutinis;
     };
     ~duomenys() {}
-    friend bool operator<(const duomenys& pirmas, const duomenys& antras) {
-        if (pirmas.Vardas == antras.Vardas) {
-            return pirmas.Pavarde < antras.Pavarde;
-        }
-        return pirmas.Pavarde < antras.Pavarde;
-    }
-    friend bool operator>(const duomenys& pirmas, const duomenys& antras) {
-        if (pirmas.Vardas == antras.Vardas) {
-            return pirmas.Pavarde > antras.Pavarde;
-        }
-        return pirmas.Pavarde > antras.Pavarde;
-    }
-    friend bool operator==(const duomenys& pirmas, const duomenys& antras) {
-        return pirmas.Vardas == antras.Vardas && pirmas.Pavarde == antras.Pavarde;
-    }
-    friend bool operator!=(const duomenys& pirmas, const duomenys& antras) {
-        return pirmas.Vardas != antras.Vardas && pirmas.Pavarde != antras.Pavarde;
-    }
+    
     void Viduk();
     void Madi();
     void Galut();
     void clearNamu() { Namu.clear(); }
-    inline string getVardas() const {return Vardas;}
-    inline string getPavarde() const {return Pavarde;}
+    /*inline string getVardas() const {return Vardas;}
+    inline string getPavarde() const {return Pavarde;}*/
     inline vector<int> getNamu() const {return Namu;}
     inline int getEgzaminas() const {return Egzaminas;}
     inline float getGalutinis() const {return Galutinis;}

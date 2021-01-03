@@ -1,5 +1,12 @@
-## Objektinio programavimo
+# Objektinio programavimo
 Antro namų darbo užduotis
+
+## Naudojimo instrukcija:
+1) Paleidžiame atsisiųstą setup.exe failą
+2) Pirmą kartą paleidus programą sugeneruojame reikiamus studentų failus
+3) Turime 2 pasirinkimus:
+vedame p - ir išvysime struktūros ir klasės palyginimą
+vedame b - ir išvysime tai ką jau darė 1.0 versija, t.y. bus įvykdytas _list_ ir _vector_ palyginimas, tačiau šįkart su jau nebe su struktūra, o klase 
 
 ### Objektinio programavimo duomenų mokslui pirmo namų darbo užduoties versija 2.0
 

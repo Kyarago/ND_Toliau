@@ -16,6 +16,7 @@ doxygen katalogas - doxygen programos pagalba sukurta programos dokumentacija
 
 **Kas naujo:**
 Doxygenu sukurti .html failai
+test.cpp - programos failas su googletest bandymais
 
 __Senesnės versijos:__
 

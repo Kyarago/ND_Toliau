@@ -17,6 +17,8 @@ doxygen katalogas - doxygen programos pagalba sukurta programos dokumentacija
 **Kas naujo:**
 Doxygenu sukurti .html failai
 test.cpp - programos failas su googletest bandymais
+setup.exe - programos instaliacinis failiukas
+v2.0_Setup.msi - programos instaliavimui reikalingas failas
 
 __Senesnės versijos:__
 

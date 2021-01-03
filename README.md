@@ -1,6 +1,24 @@
 ## Objektinio programavimo
 Antro namų darbo užduotis
 
+### Objektinio programavimo duomenų mokslui pirmo namų darbo užduoties versija 2.0
+
+**Atsisiuntę rasite:**
+main.cpp - programos kodas skirtas realizuoti užduočiai
+Klase.h - duomenų klasę ir jos funkcijas turinti antraštė
+klase.cpp - duomenų klasės funkcijų aprašas
+generavimas.h - failų generavimui skirta antraštė
+struktura.h - duomenų struktūrą ir jos funkcijas turinti antraštė
+struktura.cpp - struktūros duomenų funkcijos
+Fun.h - programos funkcijų antraštė
+Fun.cpp - programos funcijos
+doxygen katalogas - doxygen programos pagalba sukurta programos dokumentacija
+
+**Kas naujo:**
+Doxygenu sukurti .html failai
+
+__Senesnės versijos:__
+
 ### Objektinio programavimo duomenų mokslui pirmo namų darbo užduoties versija 1.5
 
 **Atsisiuntę rasite:**
@@ -15,8 +33,6 @@ Fun.cpp - programos funcijos
 
 **Kas naujo:**
 Klase.h antraštėje pridėta nauja bazinė žmogaus _zmogus_ klasė
-
-__Senesnės versijos:__
 
 ### Objektinio programavimo duomenų mokslui pirmo namų darbo užduoties versija 1.2
 
